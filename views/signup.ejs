@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SignUp</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/signup.css" type="text/css">
+    <!--Stylesheet-->
+</head>
+
+<body style="background-image: url(login.jpg); background-repeat: no-repeat; background-size: cover;opacity: 20;">
+
+    <form action="/login" method="post">
+        <h3>Register Here</h3>
+        <div class="input__box">
+            <input type="text" placeholder="User Name" name="username" required="required">
+            <%if(flagU==false){%>
+                <div>
+                    <strong>Username is taken already</strong>
+                </div>
+                <%}%>
+        </div>      
+            <div class="input__box inline_1">
+            <input type="email" placeholder="Email Address" name="email" required="required">
+            </div>
+                <div class="input__box inline_1" style="margin-left: 10px;">
+                    <input type="password" placeholder="Create Password" name="password" required="required">
+                </div>
+                <div class="input__box">
+                    <input type="text" placeholder="enter address" name="address" required="required">
+                    </div>
+                    <div class="input__box inline_1">
+                       <input type="number" placeholder="+91XXXXXXXXXX" name="contactnumber" required="required">
+                        </div>
+                        <div class="input__box inline_1" style="margin-left: 10px;">
+                            <input type="number" placeholder="zipcode" name="zipcode" required="required">
+                              </div>
+                         <div class="input__box inline_2">
+                              <input type="text" placeholder="city" name="city" required="required">
+                                    </div>
+                                    <div class="input__box inline_2" style="margin-left: 10px;">
+                                        <input type="text" placeholder="state" name="state" required="required">
+                                    </div>
+                                <div class="input__box inline_2" style="margin-left: 10px;">
+                                        <input type="text" placeholder="country" name="country" value="India"
+                                                required="required">
+                                        </div>
+                                        <div class="input__box ">
+                                            <button type="submit" id="btnSubmit"
+                                                class="submit-btn reg-btn">Register</button>
+                                        </div>
+                                        <br>
+                     <p class="forget">Aleady have an account? <a style="color: rgb(60, 60, 214);" href="/login">Sign In</a></p>
+
+    </form>
+</body>
+
+</html>
